@@ -1,0 +1,1109 @@
+body {
+	background-color: #292F36;
+	min-height: 3000vh;
+	max-height: 3000vh;
+}
+
+#Content {
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+#TitleGroup {
+	position: fixed;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	top: 25%;
+
+	animation: TitleAnim 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#Subtitle {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	color: #EEEEEE;
+	text-align: center;
+}
+
+#Title {
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	color: #EEEEEE;
+	text-align: center;
+}
+
+#Separator {
+	width: 300px;
+	height: 1px;
+	background-color: #EEEEEE;
+	margin: 0 auto;
+}
+
+#ScrollDownText {
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	color: #AAAAAA;
+	text-align: center;
+	margin-top: 20px;
+
+	animation: FadeInOut 3s linear infinite;
+}
+
+#ProgressBarBorder {
+	position: fixed;
+	width: 80%;
+	bottom: 10%;
+	left: 10%;
+
+}
+
+#ProgressBarFill {
+	position: relative;
+	background-color: #555555;
+	height: 1px;
+	animation: ProgressBarAnim 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#HomeButton {
+	position: absolute;
+	transition: 0.5s;
+	height: 75px;
+	width: 75px;
+}
+
+#HomeButton:hover {
+	transform: scale(1.2, 1.2);
+	transition: 0.5s;
+}
+
+#ArrowButton {
+	position: absolute;
+	right: 0%;
+}
+
+#ArrowButton:hover {
+	transform: scale(1.2, 1.2);
+	transition: 0.5s;
+}
+
+.Planet {
+	position: fixed;
+	transform: scale(0, 0);
+
+	/*Planet Animations*/
+	/*animation: PositionWithScroll 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;*/
+}
+
+.PlanetTitle {
+	position: relative;
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #FFFFFF;
+}
+
+.Text {
+	position: fixed;
+	top: 35%;
+	left: 40%;
+	width: 250px;
+}
+
+.Line {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+#SunText {
+	left: 30%;
+	animation: SunTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.PlanetDesc {
+	position: relative;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100px;
+	color: #FFFFFF;
+}
+
+.SaturnRings {
+	position: absolute;
+	top: -45%;
+	left: -52%;
+
+	animation: RingAnim 5s ease-in-out infinite; 
+    animation-fill-mode: both;
+	animation-direction: alternate;
+}
+
+.Flare {
+	position: absolute;
+	margin-top: -50px;
+}
+
+#Flare1 {
+	top: 50%;
+	left: 50%;
+	margin-left:-50px;
+	position: absolute;
+	animation: FlareOneAnim 5s ease-out infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+#Flare2 {
+	top: 50%;
+	left: 50%;
+	margin-left:-50px;
+	position: absolute;
+	animation: FlareTwoAnim 4s ease-out infinite;
+	animation-play-state: running;
+	animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+#Flare3 {
+	top: 50%;
+	right: 50%;
+	margin-right: -50px;
+	position: absolute;
+	animation: FlareThreeAnim 6s ease-out infinite;
+	animation-play-state: running;
+	animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes FlareOneAnim {
+	0% {
+		top: 75%;
+		opacity: 100%;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		top: 95%;
+		opacity: 0%;
+	}
+}
+
+@keyframes FlareTwoAnim {
+	0% {
+		left: 75%;
+		opacity: 100%;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		left: 95%;
+		opacity: 0%;
+	}
+}
+
+@keyframes FlareThreeAnim {
+	0% {
+		top: 30%;
+		right: 65%;
+		opacity: 100%;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		right: 75%;
+		top: 10%;
+		opacity: 0%;
+	}
+}
+
+/* PLANET IDS ================================================= */
+
+#Sun {
+	animation: SunAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#SunLine {
+	animation: SunLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+
+#SunTitle {
+	animation: SunTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#SunDesc {
+	animation: SunDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#Mercury {
+	animation: MercuryAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-itetation-count: 1;
+    animation-fill-mode: both;
+}
+
+#MercuryText { left: 50%;
+animation: MercuryTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MercuryLine { animation: MercuryLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MercuryTitle { animation: MercuryTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MercuryDesc { animation: MercuryDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Venus {
+	animation: VenusAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#VenusText { left: 30%;
+animation: VenusTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#VenusLine { animation: VenusLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#VenusTitle { animation: VenusTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#VenusDesc { animation: VenusDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Earth {
+	animation: EarthAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#EarthText { left: 50%;
+animation: EarthTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#EarthLine { animation: EarthLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#EarthTitle { animation: EarthTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#EarthDesc { animation: EarthDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Mars {
+	animation: MarsAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#MarsText { left: 30%;
+animation: MarsTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MarsLine { animation: MarsLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MarsTitle { animation: MarsTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#MarsDesc { animation: MarsDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Jupiter {
+	animation: JupiterAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#JupiterText { left: 50%;
+animation: JupiterTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#JupiterLine { animation: JupiterLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#JupiterTitle { animation: JupiterTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#JupiterDesc { animation: JupiterDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Saturn {
+	animation: SaturnAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#SaturnText { left: 25%;
+animation: SaturnTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#SaturnLine { animation: SaturnLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#SaturnTitle { animation: SaturnTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#SaturnDesc { animation: SaturnDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Uranus {
+	animation: UranusAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#UranusText { left: 50%;
+animation: UranusTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#UranusLine { animation: UranusLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#UranusTitle { animation: UranusTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#UranusDesc { animation: UranusDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+#Neptune {
+	animation: NeptuneAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#NeptuneText { left:30%;
+animation: NeptuneTextAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#NeptuneLine { animation: NeptuneLineAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#NeptuneTitle { animation: NeptuneTitleAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+#NeptuneDesc { animation: NeptuneDescAnim 1s cubic-bezier(0.32, 0, 0.67, 0) infinite; animation-play-state: paused; animation-delay: calc(var(--scroll) * -1s); animation-iteration-count: 1; animation-fill-mode: both; }
+
+/* ============================================================ */
+
+
+/* PLANET BODIES ============================*/
+
+.PlanetBody {
+	position: relative;
+	border-radius: 50%;
+	width: 195px;
+	height: 195px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#SunBody {
+	background-image: linear-gradient(#fffed5, #fffcca);
+	box-shadow: 0px 0px 20px #EEEEEE;
+}
+
+#MercuryBody {
+	background-image: linear-gradient(#ffe898, #88b7ff);
+	box-shadow: 0px 0px 20px #ffbc94;
+}
+
+#VenusBody {
+	background-image: linear-gradient(#fff8e6, #fed79c);
+	box-shadow: 0px 0px 20px #ffbc94;
+}
+
+#EarthBody {
+	/*background-color: #bedcffff; */
+	background-image: linear-gradient(#bdebff, #76c6f5);
+	box-shadow: 0px 0px 20px #bedcffff;
+}
+
+#MarsBody {
+	background-image: linear-gradient(#ffbc94, #d67a45);
+	box-shadow: 0px 0px 20px #ffbc94;
+}
+
+#JupiterBody {
+	background-image: linear-gradient(#fff8e6, #d9b285);
+	box-shadow: 0px 0px 20px #ff9cdd;
+}
+
+#SaturnBody {
+	background-image: linear-gradient(#fdffc9, #d1be88);
+	box-shadow: 0px 0px 20px #97a7ff;
+}
+
+#NeptuneBody {
+	background-image: linear-gradient(#92bdff, #4e60c4);
+	box-shadow: 0px 0px 20px #92bdff;
+}
+
+#UranusBody {
+	background-image: linear-gradient(#e9fdff, #a6cfd1);
+	box-shadow: 0px 0px 20px #e9fdff;
+}
+
+
+/* ============================================*/
+
+.Shadow {
+	position: absolute;
+}
+
+.LandLeft {
+	position: absolute;
+	animation: LandLeftAnim 20s linear infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.LandRight {
+	position: absolute;
+	animation: LandRightAnim 20s linear infinite;
+	animation-play-state: running;
+	animation-delay: -10s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.GasLeft {
+	position: absolute;
+	animation: GasAnim 20s linear infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.GasRight {
+	position: absolute;
+	animation: GasAnim 20s linear infinite;
+	animation-play-state: running;
+	animation-delay: -10s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.CloudsLeft {
+	position: absolute;
+	animation: LandLeftAnim 16s linear infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.CloudsRight {
+	position: absolute;
+	animation: LandRightAnim 16s linear infinite;
+	animation-play-state: running;
+	animation-delay: -8s;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.JupiterStorm {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+
+	animation: JupiterStormAnim 4s linear infinite;
+	animation-play-state: running;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+/* Animations ==================== */
+@keyframes TitleAnim {
+	0% {
+		opacity: 100%;
+	}
+	2% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 0%;
+	}
+}
+
+
+@keyframes FadeInOut {
+	0%{
+		opacity: 100%;
+	}
+	50% {
+		opacity: 20%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes ProgressBarAnim {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/* Title Animations ============== */
+@keyframes SunTextAnim {
+	0% { opacity: 0%; }
+	1% { opacity: 0%; }
+	4% { opacity: 100%; }
+	6% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes SunTitleAnim {
+	0% { margin-top: -20%; }
+	1% { margin-top: -20%; }
+	3% { margin-top: 0%; }
+	5% { margin-top: 0%; }
+	6% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes SunDescAnim {
+	0% { opacity: 0%; }
+	2% { opacity: 0%; }
+	3% { opacity: 0%; }
+	4% { opacity: 100%; }
+	6% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes SunLineAnim {
+	0% { width: 0%; }
+	2% { width: 0%; }
+	4% { width: 100%; }
+	5% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes MercuryTextAnim {
+	0% { opacity: 0%; }
+	11% { opacity: 0%; }
+	14% { opacity: 100%; }
+	16% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes MercuryTitleAnim {
+	0% { margin-top: -20%; }
+	10% { margin-top: -20%; }
+	11% { margin-top: -20%; }
+	13% { margin-top: 0%; }
+	15% { margin-top: 0%; }
+	16% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes MercuryDescAnim {
+	0% { opacity: 0%; }
+	10% { opacity: 0%; }
+	12% { opacity: 0%; }
+	13% { opacity: 0%; }
+	14% { opacity: 100%; }
+	16% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes MercuryLineAnim {
+	0% { width: 0%; }
+	10% { width: 0%; }
+	12% { width: 0%; }
+	14% { width: 100%; }
+	15% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes VenusTextAnim {
+	0% { opacity: 0%; }
+	21% { opacity: 0%; }
+	24% { opacity: 100%; }
+	26% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes VenusTitleAnim {
+	0% { margin-top: -20%; }
+	20% { margin-top: -20%; }
+	21% { margin-top: -20%; }
+	23% { margin-top: 0%; }
+	25% { margin-top: 0%; }
+	26% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes VenusDescAnim {
+	0% { opacity: 0%; }
+	20% { opacity: 0%; }
+	22% { opacity: 0%; }
+	23% { opacity: 0%; }
+	24% { opacity: 100%; }
+	26% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes VenusLineAnim {
+	0% { width: 0%; }
+	20% { width: 0%; }
+	22% { width: 0%; }
+	24% { width: 100%; }
+	25% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes EarthTextAnim {
+	0% { opacity: 0%; }
+	31% { opacity: 0%; }
+	34% { opacity: 100%; }
+	36% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes EarthTitleAnim {
+	0% { margin-top: -20%; }
+	30% { margin-top: -20%; }
+	31% { margin-top: -20%; }
+	33% { margin-top: 0%; }
+	35% { margin-top: 0%; }
+	36% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes EarthDescAnim {
+	0% { opacity: 0%; }
+	30% { opacity: 0%; }
+	32% { opacity: 0%; }
+	33% { opacity: 0%; }
+	34% { opacity: 100%; }
+	36% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes EarthLineAnim {
+	0% { width: 0%; }
+	30% { width: 0%; }
+	32% { width: 0%; }
+	34% { width: 100%; }
+	35% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes MarsTextAnim {
+	0% { opacity: 0%; }
+	41% { opacity: 0%; }
+	44% { opacity: 100%; }
+	46% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes MarsTitleAnim {
+	0% { margin-top: -20%; }
+	40% { margin-top: -20%; }
+	41% { margin-top: -20%; }
+	43% { margin-top: 0%; }
+	45% { margin-top: 0%; }
+	46% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes MarsDescAnim {
+	0% { opacity: 0%; }
+	40% { opacity: 0%; }
+	42% { opacity: 0%; }
+	43% { opacity: 0%; }
+	44% { opacity: 100%; }
+	46% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes MarsLineAnim {
+	0% { width: 0%; }
+	40% { width: 0%; }
+	42% { width: 0%; }
+	44% { width: 100%; }
+	45% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes JupiterTextAnim {
+	0% { opacity: 0%; }
+	51% { opacity: 0%; }
+	54% { opacity: 100%; }
+	56% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes JupiterTitleAnim {
+	0% { margin-top: -20%; }
+	50% { margin-top: -20%; }
+	51% { margin-top: -20%; }
+	53% { margin-top: 0%; }
+	55% { margin-top: 0%; }
+	56% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes JupiterDescAnim {
+	0% { opacity: 0%; }
+	50% { opacity: 0%; }
+	52% { opacity: 0%; }
+	53% { opacity: 0%; }
+	54% { opacity: 100%; }
+	56% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes JupiterLineAnim {
+	0% { width: 0%; }
+	50% { width: 0%; }
+	52% { width: 0%; }
+	54% { width: 100%; }
+	55% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes SaturnTextAnim {
+	0% { opacity: 0%; }
+	61% { opacity: 0%; }
+	64% { opacity: 100%; }
+	66% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes SaturnTitleAnim {
+	0% { margin-top: -20%; }
+	60% { margin-top: -20%; }
+	61% { margin-top: -20%; }
+	63% { margin-top: 0%; }
+	65% { margin-top: 0%; }
+	66% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes SaturnDescAnim {
+	0% { opacity: 0%; }
+	60% { opacity: 0%; }
+	62% { opacity: 0%; }
+	63% { opacity: 0%; }
+	64% { opacity: 100%; }
+	66% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes SaturnLineAnim {
+	0% { width: 0%; }
+	60% { width: 0%; }
+	62% { width: 0%; }
+	64% { width: 100%; }
+	65% { width: 100%; }
+	100% { width: 100%; }
+}
+
+@keyframes UranusTextAnim {
+	0% { opacity: 0%; }
+	71% { opacity: 0%; }
+	74% { opacity: 100%; }
+	76% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes UranusTitleAnim {
+	0% { margin-top: -20%; }
+	70% { margin-top: -20%; }
+	71% { margin-top: -20%; }
+	73% { margin-top: 0%; }
+	75% { margin-top: 0%; }
+	76% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes UranusDescAnim {
+	0% { opacity: 0%; }
+	70% { opacity: 0%; }
+	72% { opacity: 0%; }
+	73% { opacity: 0%; }
+	74% { opacity: 100%; }
+	76% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes UranusLineAnim {
+	0% { width: 0%; }
+	70% { width: 0%; }
+	72% { width: 0%; }
+	74% { width: 100%; }
+	75% { width: 100%; }
+	100% { width: 100%; }
+}
+
+
+@keyframes NeptuneTextAnim {
+	0% { opacity: 0%; }
+	81% { opacity: 0%; }
+	84% { opacity: 100%; }
+	86% { opacity: 0%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes NeptuneTitleAnim {
+	0% { margin-top: -20%; }
+	80% { margin-top: -20%; }
+	81% { margin-top: -20%; }
+	83% { margin-top: 0%; }
+	85% { margin-top: 0%; }
+	86% { margin-top: -20%; }
+	100% { margin-top: -20%; }
+}
+
+@keyframes NeptuneDescAnim {
+	0% { opacity: 0%; }
+	80% { opacity: 0%; }
+	82% { opacity: 0%; }
+	83% { opacity: 0%; }
+	84% { opacity: 100%; }
+	86% {  opacity: 0%;}
+	100% { opacity: 0%;} 
+}
+
+@keyframes NeptuneLineAnim {
+	0% { width: 0%; }
+	80% { width: 0%; }
+	82% { width: 0%; }
+	84% { width: 100%; }
+	85% { width: 100%; }
+	100% { width: 100%; }
+}
+
+/* Planet Animations ============= */
+@keyframes RingAnim {
+	from {
+		transform: rotate(-5deg);
+	}
+	from {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes GasAnim {
+	from {
+		left: -100%;
+	}
+	to { 
+		left: 100%;
+	}
+}
+
+@keyframes JupiterStormAnim {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes LandLeftAnim {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes LandRightAnim {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+
+@keyframes SunAnim {
+	0% {
+		transform: scale(0, 0);
+		top: 50%;
+		right: 50%;
+		margin-right: -125px;
+		margin-top: -125px;
+	}
+	10% {
+		transform: scale(24, 24) ;
+		right: -3000px;
+	}
+	100% {
+		right: -3000px;
+	}
+}
+
+@keyframes MercuryAnim {
+	10% { 
+		transform: scale(0, 0);
+		top: 50%;
+		left: 50%;
+		margin-left: -125px;
+		margin-top: -125px;
+	}
+	20% {
+		transform: scale(24, 24) ;
+		left: -3000px;
+	}
+	100% {
+		left: -3000px;
+	}
+}
+
+
+@keyframes VenusAnim {
+	20% { 
+		transform: scale(0, 0);
+		top: 50%;
+		right: 50%;
+		margin-right: -125px;
+		margin-top: -125px;
+	}
+	30% {
+		transform: scale(24, 24) ;
+		right: -3000px;
+	}
+	100% {
+		right: -3000px;
+	}
+}
+
+
+@keyframes EarthAnim {
+	30% { 
+		transform: scale(0, 0);
+		top: 50%;
+		left: 50%;
+		margin-left: -125px;
+		margin-top: -125px;
+	}
+	40% {
+		transform: scale(24, 24) ;
+		left: -3000px;
+	}
+	100% {
+		left: -3000px;
+	}
+}
+
+@keyframes MarsAnim {
+	40% { 
+		transform: scale(0, 0);
+		top: 50%;
+		right: 50%;
+		margin-right: -125px;
+		margin-top: -125px;
+	}
+	50% {
+		transform: scale(24, 24) ;
+		right: -3000px;
+	}
+	100% {
+		right: -3000px;
+	}
+}
+
+
+@keyframes JupiterAnim {
+	50% { 
+		transform: scale(0, 0);
+		top: 50%;
+		left: 50%;
+		margin-left: -125px;
+		margin-top: -125px;
+	}
+	60% {
+		transform: scale(24, 24) ;
+		left: -3000px;
+	}
+	100% {
+		left: -3000px;
+	}
+}
+
+
+@keyframes SaturnAnim {
+	60% { 
+		transform: scale(0, 0);
+		top: 50%;
+		right: 50%;
+		margin-top: -125px;
+		margin-right: -125px;
+		opacity: 100%;
+	}
+	67% {
+		opacity: 100%;
+	}
+	70% {
+		transform: scale(24, 24) ;
+		right: -3000px;
+		opacity: 0%;
+	}
+	71% {
+		right: -3750px;
+		opacity: 0%;
+	}
+	100% {
+		right: -3750px;
+		opacity: 0%;
+	}
+}
+
+@keyframes UranusAnim {
+	70% { 
+		transform: scale(0, 0);
+		top: 50%;
+		left: 50%;
+		margin-left: -125px;
+		margin-top: -125px;
+	}
+	80% {
+		transform: scale(24, 24) ;
+		left: -3000px;
+	}
+	100% {
+		left: -3000px;
+	}
+}
+
+@keyframes NeptuneAnim {
+	80% { 
+		transform: scale(0, 0);
+		top: 50%;
+		right: 50%;
+		margin-right: -125px;
+		margin-top: -125px;
+
+	}
+	90% {
+		transform: scale(24, 24) ;
+		right: -3000px;
+	}
+	100% {
+		right: -3000px;
+	}
+}
+
+@keyframes VoyagerAnim {
+	90% { 
+		transform: scale(0, 0);
+		top: 40%;
+		left: 50%;
+	}
+	100% {
+		transform: scale(15, 15) ;
+		left: -300%;
+	}
+}

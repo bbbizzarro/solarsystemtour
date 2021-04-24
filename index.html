@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- HEADER ===================== -->
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
+		<!--
+		<script src="assets/scripts/script.js"> </script>
+		-->
+
+		<!-- FONTS ====================== -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<!-- ============================ -->
+	</head>
+	<!-- BODY ======================= -->
+	<body>
+		<div id="Content">
+			<div id="TitleGroup"> 
+				<div id="Subtitle">A tour of the</div>
+				<div id="Title">Solar System</div>
+				<div id="Separator"></div>
+				<div id="ScrollDownText">Scroll down to begin</div>
+			</div>
+
+			<div id="ProgressBarBorder">
+				<div id="ArrowButton">
+					<img src="assets/images/arrow_icon_plain.svg"></img>
+				</div>
+				<div id="ProgressBarFill"></div>
+				<div id="HomeButton">
+					<img src="assets/images/house_icon_plain.svg"></img>
+				</div>
+			</div>
+
+			<div class="Planet" id="Sun">
+				<div class="Flare" id="Flare1"><img src="assets/images/sun_flare.svg"></div>
+				<div class="Flare" id="Flare2"><img src="assets/images/sun_flare.svg"></div>
+				<div class="Flare" id="Flare3"><img src="assets/images/sun_flare.svg"></div>
+				<div class="PlanetBody" id="SunBody">
+				</div>
+			</img></div>
+
+			<div class="Text" id="SunText">
+				<div class="PlanetTitle" id="SunTitle">The Sun</div>
+				<div class="Line" id="SunLine"></div>
+				<div class="PlanetDesc" id="SunDesc">Our journey begins here</div>
+			</div>
+
+			<div class="Planet" id="Mercury">
+				<div class="PlanetBody" id="MercuryBody">
+					<div class="LandLeft"><img src="assets/images/mercury_land.svg"></div>
+					<div class="LandRight"><img src="assets/images/mercury_land.svg"></div>
+				</div>
+			</div>
+
+			<div class="Text" id="MercuryText">
+				<div class="PlanetTitle" id="MercuryTitle">Mercury</div>
+				<div class="Line" id="MercuryLine"></div>
+				<div class="PlanetDesc" id="MercuryDesc">36 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Venus">
+				<div class="PlanetBody" id="VenusBody">
+					<div class="LandLeft"><img src="assets/images/venus_land.svg"></div>
+					<div class="LandRight"><img src="assets/images/venus_land.svg"></div>
+					<div class="CloudsLeft"><img src="assets/images/venus_clouds.svg"></div>
+					<div class="CloudsRight"><img src="assets/images/venus_clouds.svg"></div>
+				</div>
+			</div>
+
+			<div class="Text" id="VenusText">
+				<div class="PlanetTitle" id="VenusTitle">Venus</div>
+				<div class="Line" id="VenusLine"></div>
+				<div class="PlanetDesc" id="VenusDesc">67 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Earth">
+				<div class="PlanetBody" id="EarthBody">
+					<div class="LandLeft"><img src="assets/images/earth_land.svg"></div>
+					<div class="LandRight"><img src="assets/images/earth_land.svg"></div>
+					<div class="CloudsLeft"><img src="assets/images/earth_clouds.svg"></div>
+					<div class="CloudsRight"><img src="assets/images/earth_clouds.svg"></div>
+					<!-- <div class="Shadow"><img src="assets/images/shadow.svg"></div> -->
+				</div>
+			</div>
+
+			<div class="Text" id="EarthText">
+				<div class="PlanetTitle" id="EarthTitle">Earth</div>
+				<div class="Line" id="EarthLine"></div>
+				<div class="PlanetDesc" id="EarthDesc">93 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Mars">
+				<div class="PlanetBody" id="MarsBody">
+					<div class="LandLeft"><img src="assets/images/mars_land.svg"></div>
+					<div class="LandRight"><img src="assets/images/mars_land.svg"></div>
+					<div class="CloudsLeft"><img src="assets/images/mars_clouds.svg"></div>
+					<div class="CloudsRight"><img src="assets/images/mars_clouds.svg"></div>
+				</div>
+			</div>
+
+			<div class="Text" id="MarsText">
+				<div class="PlanetTitle" id="MarsTitle">Mars</div>
+				<div class="Line" id="MarsLine"></div>
+				<div class="PlanetDesc" id="MarsDesc">153 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Jupiter">
+				<div class="PlanetBody" id="JupiterBody">
+					<div class="GasLeft"><img src="assets/images/jupiter_land.svg"></div>
+					<div class="GasRight"><img src="assets/images/jupiter_land.svg"></div>
+					<div class="JupiterStorm"><img src="assets/images/jupiter_storm.svg"></div>
+				</div>
+			</div>
+
+			<div class="Text" id="JupiterText">
+				<div class="PlanetTitle" id="JupiterTitle">Jupiter</div>
+				<div class="Line" id="JupiterLine"></div>
+				<div class="PlanetDesc" id="JupiterDesc">484 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Saturn">
+				<div class="PlanetBody" id="SaturnBody">
+					<div class="GasLeft"><img src="assets/images/saturn_land.svg"></div>
+					<div class="GasRight"><img src="assets/images/saturn_land.svg"></div>
+				</div>
+				<div class="SaturnRings"><img src="assets/images/saturn_rings.svg"></div>
+			</div>
+
+			<div class="Text" id="SaturnText">
+				<div class="PlanetTitle" id="SaturnTitle">Saturn</div>
+				<div class="Line" id="SaturnLine"></div>
+				<div class="PlanetDesc" id="SaturnDesc">891 million miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Uranus">
+				<div class="PlanetBody" id="UranusBody">
+				</div>
+			</div>
+
+			<div class="Text" id="UranusText">
+				<div class="PlanetTitle" id="UranusTitle">Uranus</div>
+				<div class="Line" id="UranusLine"></div>
+				<div class="PlanetDesc" id="UranusDesc">1.8 billion miles from the Sun</div>
+			</div>
+
+			<div class="Planet" id="Neptune">
+				<div class="PlanetBody" id="NeptuneBody">
+				</div>
+			</div>
+
+			<div class="Text" id="NeptuneText">
+				<div class="PlanetTitle" id="NeptuneTitle">Neptune</div>
+				<div class="Line" id="NeptuneLine"></div>
+				<div class="PlanetDesc" id="NeptuneDesc">2.8 billion miles from the Sun</div>
+			</div>
+
+		</div>
+
+		<script src="assets/scripts/script.js"> </script>
+	</body>
+	<!-- ============================ -->
+</html>
